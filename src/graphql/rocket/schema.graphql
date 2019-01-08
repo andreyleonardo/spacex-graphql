@@ -1,0 +1,9 @@
+type Rocket {
+  rocket_id: String
+  rocket_name: String
+  rocket_type: String
+}
+
+type Query {
+  rockets: [Rocket]
+}

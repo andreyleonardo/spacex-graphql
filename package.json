@@ -1,19 +1,42 @@
 {
   "name": "spacex-graphql",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=8.4.0"
+  },
   "description": "GraphQL training",
   "main": "server.js",
   "author": "Andrey Leonardo",
   "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon -e js,graphql server.js",
+    "test": "jest --watch"
+  },
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
-    "graphql": "^14.0.2"
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3",
+    "lodash": "^4.17.11",
+    "schemaglue": "^4.0.2"
   },
   "devDependencies": {
+    "axios-mock-adapter": "^1.16.0",
     "eslint": "^5.12.0",
     "eslint-plugin-node": "^8.0.1",
-    "nodemon": "^1.18.9"
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "preset": "./config/jest-config.json"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*.spec.js"
+    ]
   }
 }
