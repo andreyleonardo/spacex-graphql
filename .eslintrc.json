@@ -7,5 +7,9 @@
      "afterEach": true,
      "expect": true
   },
-  "extends": ["eslint:recommended", "plugin:node/recommended"]
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "rules": {
+    "node/no-unpublished-require": { "error": 0 },
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }]
+  }
 }

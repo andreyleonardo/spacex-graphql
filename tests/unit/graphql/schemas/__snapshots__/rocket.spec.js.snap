@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rocket Schema schema matches with snapshot 1`] = `
+"type Rocket {
+  rocket_id: String
+  rocket_name: String
+  rocket_type: String
+}
+type Query {
+
+  rockets: [Rocket]
+}"
+`;

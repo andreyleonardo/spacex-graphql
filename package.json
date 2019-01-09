@@ -9,7 +9,7 @@
   "author": "Andrey Leonardo",
   "license": "MIT",
   "scripts": {
-    "start:dev": "nodemon -e js,graphql server.js",
+    "start:dev": "NODE_ENV=development nodemon -e js,graphql server.js",
     "test": "jest --watch"
   },
   "dependencies": {

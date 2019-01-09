@@ -1,5 +1,7 @@
 const { launchApi, launchesApi } = require('../../api/spacex-routes');
 
+// TODO: Adds error treatment
+
 exports.resolver = {
   Query: {
     async launches() {

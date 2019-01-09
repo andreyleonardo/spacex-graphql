@@ -3,9 +3,11 @@ const graphqlHTTP = require('express-graphql');
 const schema = require('../graphql/schema');
 const router = new Router();
 
+const enableGraphiQL = process.env.NODE_ENV === 'development';
+
 router.use('/graphql', graphqlHTTP({
   schema,
-  graphiql: true
+  graphiql: enableGraphiQL
 }));
 
 module.exports = router;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Launch Schema schema matches with snapshot 1`] = `
+"type Launch {
+  flight_number: Int
+  mission_name: String
+  launch_year: String
+  launch_date_local: String
+  launch_success: Boolean
+  rocket: Rocket
+}
+type Query {
+
+  launches: [Launch]
+  launch(flight_number: Int!): Launch
+}"
+`;
