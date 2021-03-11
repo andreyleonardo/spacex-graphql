@@ -1,4 +1,4 @@
-# SpaceX GraphQL Server | Node + GraphQL Study
+# SpaceX GraphQL Server | Node + GraphQL Example
 
 This is a [Node](https://nodejs.org/dist/latest-v10.x/docs/api/) + [GraphQL](https://graphql.org) server that calls [SpaceX API](https://documenter.getpostman.com/view/2025350/RWaEzAiG), to fetch some launches and rockets data.
 
